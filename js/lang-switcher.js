@@ -1,10 +1,4 @@
-function getLangFromURLorStorage() {
-  const params = new URLSearchParams(window.location.search);
-  const urlLang = params.get('lang');
-  if (urlLang) {
-    localStorage.setItem('language', urlLang);
-    return urlLang;
-  }
+function getLangFromStorageOrDefault() {
   return localStorage.getItem('language') || 'fr';
 }
 
@@ -25,7 +19,7 @@ function setLanguage(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const lang = getLangFromURLorStorage();
+  const lang = getLangFromStorageOrDefault();
   setLanguage(lang);
 
   const select = document.getElementById('language-select');
@@ -34,23 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
     select.addEventListener('change', () => {
       const selectedLang = select.value;
       localStorage.setItem('language', selectedLang);
-      const url = new URL(window.location.href);
-      url.searchParams.set('lang', selectedLang);
-      window.location.href = url.pathname + url.search;
+      setLanguage(selectedLang);
     });
   }
 
-  document.querySelectorAll('a[href]').forEach(link => {
-    const href = link.getAttribute('href');
-    if (
-      href &&
-      !href.startsWith('http') &&
-      !href.startsWith('#') &&
-      !href.includes('lang=')
-    ) {
-      const url = new URL(href, window.location.origin);
-      url.searchParams.set('lang', lang);
-      link.setAttribute('href', url.pathname + url.search);
-    }
-  });
 });
