@@ -3,16 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact - Hugo Jasmin</title>
+  <title>Hugo Jasmin - Portfolio</title>
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
 
   <header>
-    <h1>Contact</h1>
-    <nav><a href="../index.html">← Retour au menu principal</a></nav>
+    <h1 data-i18n="contact">Contact</h1>
+    <nav><a href="../index.html" data-i18n="nav_back">← Retour au menu principal</a></nav>
   </header>
+
+  <nav class="icon-nav">
+    <a href="pages/about.html" data-i18n="about" title="À propos"><i class="fas fa-user"></i></a>
+    <a href="pages/skills.html" data-i18n="skills" title="Compétences"><i class="fas fa-code"></i><span></span></a>
+    <a href="pages/experience.html" data-i18n="experience" title="Expérience"><i class="fas fa-briefcase"></i><span></span></a>
+    <a href="pages/projects.html" data-i18n="projects" title="Projets"><i class="fas fa-project-diagram"></i><span></span></a>
+    <a href="pages/education.html" data-i18n="education" title="Formation"><i class="fas fa-graduation-cap"></i><span></span></a>
+    <a href="pages/languages.html" data-i18n="languages" title="Langues"><i class="fas fa-language"></i><span></span></a>
+    <a href="pages/activities.html" data-i18n="activities" title="Activités"><i class="fas fa-music"></i><span></span></a>
+
+	<select id="language-select" aria-label="Choisir la langue">
+	<option value="fr">FR</option>
+    	<option value="en">EN</option>
+    	<option value="de">DE</option>
+  	</select>
+  </nav>
 
   <main>
     <p class="contact"><i class="fas fa-envelope"></i> <a href="mailto:hugo.jasmin@imt-atlantique.org">hugo.jasmin@imt-atlantique.org</a></p>
@@ -21,8 +37,11 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Hugo Jasmin. Tous droits réservés.</p>
+    <p data-i18n="footer">© 2025 Hugo Jasmin. Tous droits réservés.</p>
   </footer>
+
+  <script src="../js/lang.js"></script>
+  <script src="../js/lang-switcher.js"></script>
 
 </body>
 </html>

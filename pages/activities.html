@@ -3,32 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Activités extra-professionnelles - Hugo Jasmin</title>
+  <title>Hugo Jasmin - Portfolio</title>
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
 
   <header>
-    <h1>Activités extra-professionnelles</h1>
-    <nav><a href="../index.html">← Retour au menu principal</a></nav>
+    <h1 data-i18n="activities_title">Activités extra-professionnelles</h1>
+    <nav><a href="../index.html" data-i18n="nav_back">← Retour au menu principal</a></nav>
   </header>
+
+  <nav class="icon-nav">
+    <a href="pages/about.html" data-i18n="about" title="À propos"><i class="fas fa-user"></i></a>
+    <a href="pages/skills.html" data-i18n="skills" title="Compétences"><i class="fas fa-code"></i><span></span></a>
+    <a href="pages/experience.html" data-i18n="experience" title="Expérience"><i class="fas fa-briefcase"></i><span></span></a>
+    <a href="pages/projects.html" data-i18n="projects" title="Projets"><i class="fas fa-project-diagram"></i><span></span></a>
+    <a href="pages/education.html" data-i18n="education" title="Formation"><i class="fas fa-graduation-cap"></i><span></span></a>
+    <a href="pages/languages.html" data-i18n="languages" title="Langues"><i class="fas fa-language"></i><span></span></a>
+    <a href="pages/activities.html" data-i18n="activities" title="Activités"><i class="fas fa-music"></i><span></span></a>
+
+	<select id="language-select" aria-label="Choisir la langue">
+	<option value="fr">FR</option>
+    	<option value="en">EN</option>
+    	<option value="de">DE</option>
+  	</select>
+  </nav>
 
   <main>
     <div class="card">
-      <h3>Musique</h3>
-      <p>12 ans de pratique de la clarinette - Certificat d'études musicales obtenu au Conservatoire à Rayonnement Régional d'Amiens Métropole (2020)</p>
+      <h3 data-i18n="activity_music_title">Musique</h3>
+      <p data-i18n="activity_music_desc">12 ans de pratique de la clarinette - Certificat d'études musicales obtenu au Conservatoire à Rayonnement Régional d'Amiens Métropole (2020)</p>
     </div>
     <div class="card">
-      <h3>Sport</h3>
-      <p>Cyclisme et course à pied</p>
-      <p>Pratique en club : judo (5 ans), football (4 ans), triathlon (1 an)</p>
+      <h3 data-i18n="activity_sport_title">Sport</h3>
+      <p data-i18n="activity_sport_desc1">Cyclisme et course à pied</p>
+      <p data-i18n="activity_sport_desc2">Pratique en club : judo (5 ans), football (4 ans), triathlon (1 an)</p>
       <iframe height="160" width="300" frameborder="0" allowtransparency="true" scrolling="no" src="https://www.strava.com/athletes/57538442/activity-summary/be96ef80f5aa3d04dc46241dc990edaf3e72e002"></iframe>
     </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 Hugo Jasmin. Tous droits réservés.</p>
+    <p data-i18n="footer">© 2025 Hugo Jasmin. Tous droits réservés.</p>
   </footer>
+
+  <script src="../js/lang.js"></script>
+  <script src="../js/lang-switcher.js"></script>
 
 </body>
 </html>

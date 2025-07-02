@@ -3,36 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projets - Hugo Jasmin</title>
+  <title>Hugo Jasmin - Portfolio</title>
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
 
   <header>
-    <h1>Projets</h1>
-    <nav><a href="../index.html">← Retour au menu principal</a></nav>
+    <h1 data-i18n="projects">Projets</h1>
+    <nav><a href="../index.html" data-i18n="nav_back">← Retour au menu principal</a></nav>
   </header>
+
+  <nav class="icon-nav">
+    <a href="pages/about.html" data-i18n="about" title="À propos"><i class="fas fa-user"></i></a>
+    <a href="pages/skills.html" data-i18n="skills" title="Compétences"><i class="fas fa-code"></i><span></span></a>
+    <a href="pages/experience.html" data-i18n="experience" title="Expérience"><i class="fas fa-briefcase"></i><span></span></a>
+    <a href="pages/projects.html" data-i18n="projects" title="Projets"><i class="fas fa-project-diagram"></i><span></span></a>
+    <a href="pages/education.html" data-i18n="education" title="Formation"><i class="fas fa-graduation-cap"></i><span></span></a>
+    <a href="pages/languages.html" data-i18n="languages" title="Langues"><i class="fas fa-language"></i><span></span></a>
+    <a href="pages/activities.html" data-i18n="activities" title="Activités"><i class="fas fa-music"></i><span></span></a>
+
+	<select id="language-select" aria-label="Choisir la langue">
+	<option value="fr">FR</option>
+    	<option value="en">EN</option>
+    	<option value="de">DE</option>
+  	</select>
+  </nav>
 
   <main>
     <div class="projects">
       <div class="card">
-        <h4>Webapp de notation de films</h4>
-        <p>Application inspirée d’IMDb réalisée avec Flask, HTML, Jinja, JavaScript et CSS.</p>
+        <h4 data-i18n="project_movieapp_title">Webapp de notation de films</h4>
+        <p data-i18n="project_movieapp_desc">Application inspirée d’IMDb réalisée avec Flask, HTML, Jinja, JavaScript et CSS.</p>
       </div>
       <div class="card">
-        <h4>Accessibilité pour BNP Paribas</h4>
-        <p>Optimisation de l’accessibilité selon le RGAA avec HTML, CSS et JavaScript.</p>
+        <h4 data-i18n="project_bnp_title">Accessibilité pour BNP Paribas</h4>
+        <p data-i18n="project_bnp_desc">Optimisation de l’accessibilité selon le RGAA avec HTML, CSS et JavaScript.</p>
       </div>
       <div class="card">
-        <h4>Projet Innovation Durable</h4>
-        <p>Conception d’un transport rural durable via enquêtes terrain, prototypage et outils Lean Startup.</p>
+        <h4 data-i18n="project_innovation_title">Projet Innovation Durable</h4>
+        <p data-i18n="project_innovation_desc">Conception d’un transport rural durable via enquêtes terrain, prototypage et outils Lean Startup.</p>
       </div>
     </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 Hugo Jasmin. Tous droits réservés.</p>
+    <p data-i18n="footer">© 2025 Hugo Jasmin. Tous droits réservés.</p>
   </footer>
+
+  <script src="../js/lang.js"></script>
+  <script src="../js/lang-switcher.js"></script>
 
 </body>
 </html>
