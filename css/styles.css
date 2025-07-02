@@ -186,6 +186,11 @@ footer {
   color: #555;
 }
 
+.header-nav {
+  text-align: center;
+  margin-top: 1rem;
+}
+
 #contact {
   max-width: 600px;
   margin: 0 auto 3rem;
