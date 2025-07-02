@@ -1,58 +1,165 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Hugo Jasmin</title>
-		<link rel="stylesheet" href="css/style.css">
-	</head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hugo Jasmin - Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
 
-	<body>
-	
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<div align="left"><a href="en.html">EN</a></div>
-					<h3>Bienvenue sur le site personnel de</a>
-					<h1> Hugo Jasmin</h1>
-					<div class="zone3" >
-						<font size="6">
-						<a href="img/CV_Hugo_Jasmin.pdf" target="_blank"><br>CV<br></a>
-						<a href="https://www.linkedin.com/in/hugo-j-917501187" target="_blank" ><img src="img/logolinkedin.jpg" alt=""height="10%"width="10%" /><br></a>
-						<a href="mailto:hugo.jasmin1104@gmail.com" target="_blank">E-mail<br></a>
-						<a href="tel:+33678296659" target="_blank">Téléphone</a>
-						</font>
-					</div>
-				</section>
+  <header>
+    <img src="assets/hugo-photo.jpg" alt="Photo de Hugo Jasmin" class="profile-photo">
+    <h1>Hugo Jasmin</h1>
+    <p data-i18n="subtitle">Étudiant en ingénierie logicielle à IMT Atlantique</p>
+  </header>
 
-				<section>
-					<section><h3>Formation</h3></section>
-					<section><h4>IMT Atlantique : 2023-Aujourd'hui<hr>Formation d'ingénieur généraliste</h4></section>
-					<section><h4>Lycée Faidherbe - Lille : 2021-2023<hr>Classe Préparatoire aux grandes écoles : PCSI - PSI*<hr>Travail de recherche (TIPE) sur la transport d'électricité par induction</h4></section>
-					<section><h4>Lycée Edouard Branly - Amiens : 2018-2021<hr>Baccalauréat général spécialités Mathématiques, Physique-chimie Mention très bien avec les félicitations du jury</h4></section>
-					<section><h4>Collège des Fontaines - Poix-de-Picardie : 2014-2018</h4></section>
-				</section>
+  <nav>
+    <a href="#about" data-i18n="nav_about">À propos</a>
+    <a href="#skills" data-i18n="nav_skills">Compétences</a>
+    <a href="#experience" data-i18n="nav_experience">Expérience</a>
+    <a href="#projects" data-i18n="nav_projects">Projets</a>
+    <a href="#education">Formation</a>
+    <a href="#languages">Langues</a>
+    <a href="#activities">Activités</a>
+    <a href="#contact" data-i18n="nav_contact">Contact</a>
+    <select id="language-select">
+      <option value="fr">FR</option>
+      <option value="en">EN</option>
+      <option value="de">DE</option>
+    </select>
+  </nav>
 
-				<section>
-					<section><h3>Compétences</h3></section>
-					<section><h4>Langues<hr>Anglais<br><br>Allemand : A2 (compréhension oral), B1 (compréhension écrite et expression écrite et orale) certifiés au DSD1</h4></section>
-					<section><h4>Informatique</h4><br><br><h6>Programmation :<br><br>Python - HTML/CSS - LaTeX<hr><br>Bureautique :<br><br>Word - Excel - PowerPoint</h6></section>
-				</section>
+  <div class="container">
+    <!-- À propos -->
+    <section id="about">
+      <h2 data-i18n="nav_about">À propos</h2>
+      <p data-i18n="about_text">Étudiant en ingénierie des systèmes d'information à IMT Atlantique...</p>
+    </section>
 
-				<section>
-					<section><h3>Activités extra-professionnelles</h3></section>
-					<section><h4>Musique<hr>12 ans de pratique de la clarinette - Certificat d'études musicales obtenu au Conservatoire à Rayonnement Régional d'Amiens Métropole (2020)</h4></section>
-					<section><h4>Sport<hr>Cyclisme et course à pied<br><br>Pratique en club : judo (5 ans), football (4 ans), triathlon (1 an)</h4><br><iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/57538442/activity-summary/be96ef80f5aa3d04dc46241dc990edaf3e72e002'></iframe></section>
-				</section>
-			</div>
-		</div>
-		<script src="js/reveal.js"></script>
-		<script>
-			Reveal.initialize({
-				center: true,
-				history: true,
-			});
-		</script>
-	</body>
+    <!-- Compétences -->
+    <section id="skills">
+      <h2 data-i18n="skills_title">Compétences</h2>
+      <div class="skills">
+        <div class="card">Python</div>
+        <div class="card">HTML / CSS</div>
+        <div class="card">JavaScript</div>
+        <div class="card">SQL</div>
+        <div class="card">Java</div>
+        <div class="card">Git & GitHub</div>
+        <div class="card">Vue.js</div>
+        <div class="card">Figma</div>
+        <div class="card">Flask</div>
+        <!-- Infos du 2e doc -->
+        <div class="card">LaTeX</div>
+        <div class="card">Word</div>
+        <div class="card">Excel</div>
+        <div class="card">PowerPoint</div>
+      </div>
+    </section>
+
+    <!-- Expérience -->
+    <section id="experience">
+      <h2 data-i18n="experience_title">Expérience</h2>
+
+      <div class="card">
+        <h3>Développeur Front-end (Stage) - Unisphere GmbH</h3>
+        <p><strong>Avril 2025 – Août 2025 | Constance, Allemagne</strong></p>
+        <p>Développement de modules de simulation de vol avec VueJS, TypeScript et NodeJS dans une équipe Agile internationale.</p>
+      </div>
+
+      <div class="card">
+        <h3>Responsable Qualité - Junior Atlantique</h3>
+        <p><strong>Octobre 2023 – Décembre 2024 | Nantes</strong></p>
+        <p>Encadrement du système qualité, audits internes, conformité CNJE, structuration RSE et formalisation de processus internes.</p>
+      </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projects">
+      <h2 data-i18n="projects_title">Projets</h2>
+      <div class="projects">
+        <div class="card">
+          <h4>Webapp de notation de films</h4>
+          <p>Application inspirée d’IMDb réalisée avec Flask, HTML, Jinja, JavaScript et CSS.</p>
+        </div>
+        <div class="card">
+          <h4>Accessibilité pour BNP Paribas</h4>
+          <p>Optimisation de l’accessibilité selon le RGAA avec HTML, CSS et JavaScript.</p>
+        </div>
+        <div class="card">
+          <h4>Projet Innovation Durable</h4>
+          <p>Conception d’un transport rural durable via enquêtes terrain, prototypage et outils Lean Startup.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formation (nouvelle section) -->
+    <section id="education">
+      <h2>Formation</h2>
+      <div class="card">
+        <h3>IMT Atlantique</h3>
+        <p>2023 - Aujourd'hui<br/>Formation d'ingénieur généraliste</p>
+      </div>
+      <div class="card">
+        <h3>Lycée Faidherbe - Lille</h3>
+        <p>2021 - 2023<br/>Classe Préparatoire aux grandes écoles : PCSI - PSI*<br/>Travail de recherche (TIPE) sur le transport d'électricité par induction</p>
+      </div>
+      <div class="card">
+        <h3>Lycée Edouard Branly - Amiens</h3>
+        <p>2018 - 2021<br/>Baccalauréat général, spécialités Mathématiques, Physique-chimie<br/>Mention très bien avec les félicitations du jury</p>
+      </div>
+      <div class="card">
+        <h3>Collège des Fontaines - Poix-de-Picardie</h3>
+        <p>2014 - 2018</p>
+      </div>
+    </section>
+
+    <!-- Langues (nouvelle section) -->
+    <section id="languages">
+      <h2>Langues</h2>
+      <div class="card">
+        <p><strong>Anglais</strong></p>
+        <p>Courant</p>
+      </div>
+      <div class="card">
+        <p><strong>Allemand</strong></p>
+        <p>A2 (compréhension orale), B1 (compréhension écrite, expression écrite et orale)<br/>Certifié DSD1</p>
+      </div>
+    </section>
+
+    <!-- Activités extra-professionnelles (nouvelle section) -->
+    <section id="activities">
+      <h2>Activités extra-professionnelles</h2>
+      <div class="card">
+        <h3>Musique</h3>
+        <p>12 ans de pratique de la clarinette - Certificat d'études musicales obtenu au Conservatoire à Rayonnement Régional d'Amiens Métropole (2020)</p>
+      </div>
+      <div class="card">
+        <h3>Sport</h3>
+        <p>Cyclisme et course à pied</p>
+        <p>Pratique en club : judo (5 ans), football (4 ans), triathlon (1 an)</p>
+        <iframe height="160" width="300" frameborder="0" allowtransparency="true" scrolling="no" src="https://www.strava.com/athletes/57538442/activity-summary/be96ef80f5aa3d04dc46241dc990edaf3e72e002"></iframe>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2 data-i18n="contact_title">Contact</h2>
+      <p class="contact"><i class="fas fa-envelope"></i> <a href="mailto:hugo.jasmin@imt-atlantique.org">hugo.jasmin@imt-atlantique.org</a></p>
+      <p class="contact"><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/hugo-jasmin-917501187" target="_blank">linkedin.com/in/hugo-jasmin</a></p>
+      <p class="contact"><i class="fas fa-phone"></i> <a href="tel:+33678296659" class="btn">+33678296659</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p data-i18n="footer">&copy; 2025 Hugo Jasmin. Tous droits réservés.</p>
+  </footer>
+
+  <script src="js/lang.js"></script>
+  <script src="js/lang-switcher.js"></script>
+</body>
 </html>
