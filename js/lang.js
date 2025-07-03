@@ -112,6 +112,15 @@ Participation aux Olympiades de Mathématiques et au Concours National de Mathé
   Cette expérience m’a permis de développer des compétences en management de la qualité, amélioration continue et conduite de projets à impact dans un cadre associatif exigeant.
 </p>
 `,
+    lang_en: "Anglais",
+    lang_en_level: "Courant",
+    lang_de: "Allemand",
+    lang_de_level: "A2 (compréhension orale), B1 (compréhension écrite, expression écrite et orale) - Certifié DSD1",
+    activity_music_title: "Musique",
+    activity_music_desc: "12 ans de pratique de la clarinette - Certificat d'études musicales au Conservatoire à Rayonnement Régional d'Amiens Métropole (2020)",
+    activity_sport_title: "Sport",
+    activity_sport_desc1: "Cyclisme et course à pied",
+    activity_sport_desc2: "Pratique en club : Judo (5 ans), Football (4 ans), Triathlon (1 an)",
   },
   en: {
     title: "Hugo Jasmin - Portfolio",
@@ -225,42 +234,134 @@ Participated in Mathematics Olympiads and the National Mathematics Competition
   This experience allowed me to develop skills in quality management, continuous improvement, and leading impactful projects in a demanding associative environment.
 </p>
 `,
+    lang_en: "English",
+    lang_en_level: "Fluent",
+    lang_de: "German",
+    lang_de_level: "A2 (listening), B1 (reading, writing, speaking) - DSD1 certified",
+    activity_music_title: "Music",
+    activity_music_desc: "12 years of clarinet practice – Certificate in Musical Studies from the Amiens Metropolitan Regional Conservatory (2020)",
+    activity_sport_title: "Sport",
+    activity_sport_desc1: "Cycling and running",
+    activity_sport_desc2: "Club activities: Judo (5 years), Football (4 years), Triathlon (1 year)",
   },
   de: {
     title: "Hugo Jasmin - Portfolio",
-    subtitle: "Informatikstudent an der IMT Atlantique",
+    subtitle: "Student für Softwaretechnik an der IMT Atlantique",
     about: "Über mich",
-    skills: "Fähigkeiten",
+    skills: "Kompetenzen",
     experience: "Erfahrung",
     projects: "Projekte",
     contact: "Kontakt",
     education: "Ausbildung",
     languages: "Sprachen",
     activities: "Aktivitäten",
-    about_text: "Informatikstudent an der IMT Atlantique, begeistert von kollaborativer Softwareentwicklung und Webtechnologien.",
+    about_text: "🌐 Zukünftiger IT-Berater an der Schnittstelle zwischen Technik und Strategie. <br>Derzeit im zweiten Jahr an der IMT Atlantique, spezialisiert auf Softwaretechnik und Management von Informationssystemen. Ab nächstem Jahr werde ich ein duales Studium bei Proginov beginnen und an Projekten zur digitalen Transformation mitarbeiten, insbesondere an der Integration von ERP-Systemen und der Optimierung von Geschäftsprozessen. <br>Mit praktischer Erfahrung in der Softwareentwicklung habe ich bei Unisphere GmbH gearbeitet, einem Start-up, das sich auf digitale Tools für die Flugplanung von Drohnen spezialisiert hat. Diese dynamische Umgebung ermöglichte mir einen konkreten Einblick in technische und geschäftliche Herausforderungen der digitalen Innovation. <br>💼 Mein Ziel ist es, mich im Bereich IT-Beratung oder digitales Projektmanagement weiterzuentwickeln, um meine technischen Fähigkeiten einzusetzen und Unternehmen bei Wachstum und Wandel zu unterstützen. <br>🌍 Ich blühe in multikulturellen, kollaborativen Teams auf und möchte zu wirkungsvollen Projekten beitragen, die technologische Innovation und strategisches Verständnis verbinden.",
     footer: "© 2025 Hugo Jasmin. Alle Rechte vorbehalten.",
     nav_back: "← Zurück zum Hauptmenü",
     project_movieapp_title: "Film-Bewertungs-Webapp",
-    project_movieapp_desc: "Von IMDb inspirierte Anwendung, erstellt mit Flask, HTML, Jinja, JavaScript und CSS.",
+    project_movieapp_desc: "Von IMDb inspirierte Anwendung, développée avec Flask, HTML, Jinja, JavaScript et CSS.",
+    project_innovation_title: "Projekt Nachhaltige Innovation",
+    project_innovation_date: "Jan. 2025 – Apr. 2025",
+    project_innovation_desc: `Im Rahmen dieses Projekts entwickelte unser Team den Vélauto, eine nachhaltige Mobilitätslösung für den ländlichen Raum, inspiriert von der pedalbetriebenen „Rosalie“ mit elektrischer Unterstützung.<br>
+Ziel war es, Mobilitätsprobleme in unterversorgten Regionen mit einem nutzerzentrierten Innovationsansatz zu lösen.<br>
+<strong>Vorgehen:</strong>
+<ul>
+  <li>Feldbefragungen und Interviews mit Stakeholdern</li>
+  <li>Bedarfsanalyse mit Lean-Startup-Tools (Personas, Value Proposition Canvas)</li>
+  <li>Pretotyping und Nutzertests</li>
+  <li>Analyse der technischen, sozialen und wirtschaftlichen Auswirkungen</li>
+</ul>
+Dieses Projekt ermöglichte uns, agile und nachhaltige Innovation praktisch anzuwenden: Design Thinking, Feldarbeit, schnelle Iteration und systemische Analyse.`,
+    project_innovation_skills: "Kompetenzen: Projektmanagement · Lean Startup",
     project_bnp_title: "Barrierefreiheit für BNP Paribas",
-    project_bnp_desc: "Optimierung der Barrierefreiheit gemäß RGAA mit HTML, CSS und JavaScript.",
-    project_innovation_title: "Projekt für nachhaltige Innovation",
-    project_innovation_desc: "Entwicklung eines nachhaltigen ländlichen Transports durch Felduntersuchungen, Prototyping und Lean Startup-Tools.",
+    project_bnp_date: "Sept. 2024 – Jan. 2025",
+    project_bnp_desc: `Das Projekt bestand darin, die Barrierefreiheit der BNP Paribas Website in Zusammenarbeit mit dem Unternehmen zu verbessern.<br>
+<ul>
+  <li>Identifikation typischer Nutzerprofile mit Behinderung</li>
+  <li>Kennenlernen der RGAA-Richtlinien für digitale Barrierefreiheit</li>
+  <li>Anpassung des Quellcodes der Webseite</li>
+</ul>`,
+    project_bnp_skills: "Kompetenzen: HTML · CSS · Projektmanagement",
+    project_mine_title: "Entwicklung und Design von Ingenieursystemen",
+    project_mine_date: "Jan. 2024 – Mai 2024",
+    project_mine_desc: "Studie zur Umwandlung einer Uranmine in ein Photovoltaik-Kraftwerk, Standort Bertholène",
+    project_mine_skills: "Kompetenzen: Projektmanagement · Wissenschaftliche Analyse · Wissenschaftliche Berichte",
+    project_ffa_title: "Learning by Doing",
+    project_ffa_date: "Sept. 2023 – Dez. 2023",
+    project_ffa_desc: "Entwicklung eines automatischen Beleuchtungssystems, einer Leistungsbank und eines magnetgeführten Roboters im Team von fünf Studierenden.",
+    project_ffa_skills: "Kompetenzen: Elektronik · Projektmanagement",
+    edu_imt_desc: `
+A+-Hochschule, entstanden aus der Fusion der École des Mines de Nantes und Télécom Bretagne (Platz 3 im L'Etudiant-Ranking 2025)<br>
+Diplom-Ingenieur, Informatik<br>
+Aktivitäten und Vereine: Qualitätsmanager der Junior Enterprise, Eventteam des International Students Office, Cateringmanager für WAKE 2024, Ultimate<br>
+Erstes Jahr: Grundlagen in Mathematik, Physik, Informatik, Soziologie und Wirtschaft<br>
+Zweites Jahr: Spezialisierung auf kollaborative und verteilte Softwareentwicklung
+<ul>
+  <li>Organisatorisches und strategisches Verhalten von Unternehmen</li>
+  <li>Fortgeschrittene Programmier- und Entwicklungsmethoden</li>
+  <li>Wirtschaftliches, organisatorisches und rechtliches Umfeld für Entwickler</li>
+  <li>Entwicklung großskaliger Softwaresysteme</li>
+  <li>Mensch-Maschine-Interaktion – Nutzererfahrung</li>
+</ul>
+`,
+    edu_imt_skills: "Kompetenzen: Projektkoordination · Java · Python · Algorithmen · Programmierung · SQL · Kommunikation · Englisch · Deutsch · Physik",
+    edu_faidherbe_desc: `
+Zwei Jahre intensive Vorbereitung auf die Aufnahmeprüfungen der französischen Ingenieurschulen<br>
+Aktivitäten und Vereine: Forschungsprojekt (TIPE) zur Piezoelektrizität<br>
+Erstes Jahr: Physik, Chemie, Ingenieurwissenschaften<br>
+Zweites Jahr: Physik, Ingenieurwissenschaften, Leistungskurs<br>
+Zulassung zu den Wettbewerben Mines-Ponts und Centrale
+`,
+    edu_faidherbe_skills: "Kompetenzen: Ingenieurwesen · Projektkoordination · Algorithmen · Programmierung · Mathematik · Physik · Problemlösung · SQL",
+    edu_branly_desc: `
+Allgemeines Abitur, Schwerpunkte Mathematik und Physik-Chemie<br>
+Abschluss: Mit Auszeichnung und Lob der Jury<br>
+Teilnahme an Mathematik-Olympiaden und dem nationalen Mathematikwettbewerb
+`,
+    edu_branly_skills: "",
+    exp_unisphere_title: "Front-end Entwickler (Praktikum) - Unisphere GmbH",
+    exp_unisphere_date: "April 2025 – August 2025 | Konstanz, Deutschland",
+    exp_unisphere_desc: `
+<p>
+  Als Frontend-Entwickler bei Unisphere GmbH habe ich an der Verbesserung einer Plattform zur Flugplanung für Drohnen und Flugtaxis mitgewirkt.
+</p>
+<ul>
+  <li>Entwicklung von Modulen zur Echtzeitmodellierung von Flugbedingungen</li>
+  <li>Import und Verwaltung von Flugrouten</li>
+  <li>Automatische Neuberechnung der Routen je nach Wetter, Reichweite usw.</li>
+  <li>Arbeit in einem internationalen, interdisziplinären Agile-Team</li>
+  <li>Technologien: VueJS, TypeScript, NodeJS, Git</li>
+</ul>
+<p>
+  Diese dynamische Umgebung ermöglichte mir einen konkreten Einblick in die technischen und geschäftlichen Herausforderungen der digitalen Innovation.
+</p>
+<p>
+  Unisphere ist ein deutsches Start-up, das sich auf digitale Tools für die Flugplanung von Drohnen spezialisiert hat.
+</p>
+`,
+
+    exp_junior_title: "Qualitätsmanager - Junior Atlantique",
+    exp_junior_date: "Oktober 2023 – Dezember 2024 | Nantes",
+    exp_junior_desc: `
+<p>
+  Qualitäts- und CSR-Manager der Junior-Enterprise der IMT Atlantique.
+</p>
+<ul>
+  <li>Leitung des internen Qualitätsmanagementsystems (Review von Ergebnissen, Audits, CNJE-Konformität)</li>
+  <li>Formalisierung und Verbesserung interner Prozesse</li>
+  <li>Einführung und Strukturierung der CSR-Initiative (Diagnose, Aktionsplan, Sensibilisierung)</li>
+  <li>Teilnahme am jährlichen CNJE-Audit (Qualität und nachhaltige Entwicklung)</li>
+</ul>
+<p>
+  Diese Erfahrung ermöglichte mir, Kompetenzen im Qualitätsmanagement, in kontinuierlicher Verbesserung und in der Leitung wirkungsvoller Projekte in einem anspruchsvollen Vereinsumfeld zu entwickeln.
+</p>
+`,
     lang_en: "Englisch",
     lang_en_level: "Fließend",
     lang_de: "Deutsch",
-    lang_de_level: "A2 (hörverstehen), B1 (schriftliches Verständnis, schriftlicher und mündlicher Ausdruck) - Zertifiziert DSD1",
-    exp_unisphere_title: "Front-end Entwickler (Praktikum) - Unisphere GmbH",
-    exp_unisphere_date: "April 2025 – August 2025 | Konstanz, Deutschland",
-    exp_unisphere_desc: "Entwicklung von FlugSimulationsmodulen mit VueJS, TypeScript und NodeJS in einem internationalen Agile-Team.",
-    exp_junior_title: "Qualitätsmanager - Junior Atlantique",
-    exp_junior_date: "Oktober 2023 – Dezember 2024 | Nantes",
-    exp_junior_desc: "Leitung des Qualitätsmanagementsystems, interne Audits, CNJE-Konformität, CSR-Strukturierung und Formalisierung interner Prozesse.",
-    edu_imt_desc: "Allgemeine Ingenieurausbildung",
-    edu_faidherbe_desc: "Vorbereitungsklasse für grandes écoles: PCSI - PSI* - Forschungsprojekt (TIPE) über den Transport von Elektrizität durch Induktion",
-    edu_branly_desc: "Allgemeines Abitur, Spezialités Mathematik, Physik-Chemie - Auszeichnung mit sehr gutem Ergebnis und Lob des Prüfungsausschusses",
+    lang_de_level: "A2 (Hörverstehen), B1 (Leseverstehen, schriftlicher und mündlicher Ausdruck) – DSD1 zertifiziert",
     activity_music_title: "Musik",
-    activity_music_desc: "12 Jahre Klarinettenpraxis - Zertifikat für musikalische Studien am Conservatoire à Rayonnement Régional d'Amiens Métropole (2020)",
+    activity_music_desc: "12 Jahre Klarinettenpraxis – Zertifikat für musikalische Studien am Konservatorium Amiens Métropole (2020)",
     activity_sport_title: "Sport",
     activity_sport_desc1: "Radfahren und Laufen",
     activity_sport_desc2: "Vereinsaktivitäten: Judo (5 Jahre), Fußball (4 Jahre), Triathlon (1 Jahr)"
