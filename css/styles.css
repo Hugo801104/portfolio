@@ -65,19 +65,145 @@ section h2 {
   margin-bottom: 1rem;
 }
 
-.skills,
+.skills {
+  display: block; /* plus de grid ici */
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 .projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
 }
 
 .card {
   background: white;
-  padding: 1rem;
+  padding: 2rem 2rem 1.5rem 2rem;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  margin: 1.5rem auto;
+  width: 75%;
+  max-width: 900px;
+  text-align: justify;
+  font-size: 1.08rem;
+  display: block;
+}
+
+.card h3,
+.card h4,
+.card h2 {
+  text-align: center;
+  margin-bottom: 0.7rem;
+}
+
+.card p,
+.card ul,
+.card ol {
+  text-align: justify;
+  margin: 0.5rem 0;
+}
+
+.card strong,
+.card .center,
+.card .skills-category h3 {
+  text-align: center;
+  display: block;
+}
+
+.projects,
+.education-cards,
+.skills,
+main > .card,
+section.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+.card-list .card {
+  min-width: 120px;
+  max-width: 180px;
+  flex: 1 1 30%;
+  text-align: justify;
+  background: #f8f8f8;
+  box-shadow: none;
+  padding: 0.7rem 1rem;
+  margin: 0.3rem;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.skills-category {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.skills-category h3 {
+  margin-bottom: 0.5rem;
+  color: #222;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.exp-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  justify-content: center;
+}
+
+.exp-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #fff;
+  border: 1px solid #eee;
+  margin-right: 0.5rem;
+}
+
+/* Centrage des titres principaux */
+.header-nav,
+.header-flex,
+.icon-nav {
+  text-align: center;
+  justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .card {
+    width: 95%;
+    padding: 1.2rem 0.7rem;
+  }
+}
+
+li {
+  margin-left: 1rem;
+}
+
+p {
   margin: 0.5rem;
+  text-align: justify;
+}
+
+footer p {
+  text-align: center;
+  margin: 0.5rem 0;
 }
 
 footer {

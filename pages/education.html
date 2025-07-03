@@ -33,26 +33,52 @@
 	<select id="language-select" aria-label="Choisir la langue">
 	<option value="fr">FR</option>
     	<option value="en">EN</option>
-    	<option value="de">DE</option>
+    	<!-- <option value="de">DE</option> -->
   	</select>
   </nav>
 
   <main>
-    <div class="card">
-      <h3>IMT Atlantique</h3>
-      <p>2023 - 2026<br/><span data-i18n="edu_imt_desc">Formation d'ingénieur généraliste</span></p>
-    </div>
-    <div class="card">
-      <h3>Lycée Faidherbe - Lille</h3>
-      <p>2021 - 2023<br/><span data-i18n="edu_faidherbe_desc">Classe Préparatoire aux grandes écoles : PCSI - PSI* - Travail de recherche (TIPE) sur le transport d'électricité par induction</span></p>
-    </div>
-    <div class="card">
-      <h3>Lycée Edouard Branly - Amiens</h3>
-      <p>2018 - 2021<br/><span data-i18n="edu_branly_desc">Baccalauréat général, spécialités Mathématiques, Physique-chimie - Mention très bien avec les félicitations du jury</span></p>
-    </div>
-    <div class="card">
-      <h3>Collège des Fontaines - Poix-de-Picardie</h3>
-      <p>2014 - 2018</p>
+    <div class="education-cards">
+      <div class="card">
+        <div class="exp-header">
+          <img src="../assets/imta.png" alt="IMTA Logo" class="exp-logo" />
+          <h3>IMT Atlantique</h3>
+        </div>
+        <p>2023 - 2026<br/>
+          <span data-i18n="edu_imt_desc"></span>
+          <br>
+          <span data-i18n="edu_imt_skills"></span>
+        </p>
+      </div>
+      <div class="card">
+        <div class="exp-header">
+          <img src="../assets/prepa.jpg" alt="Lycée Faidherbe Logo" class="exp-logo" />
+          <h3>Lycée Faidherbe - Lille</h3>
+        </div>
+        <p>2021 - 2023<br/>
+          <span data-i18n="edu_faidherbe_desc"></span>
+          <br>
+          <span data-i18n="edu_faidherbe_skills"></span>
+        </p>
+      </div>
+      <div class="card">
+        <div class="exp-header">
+          <img src="../assets/lycee.jpg" alt="Lycée Branly Logo" class="exp-logo" />
+          <h3>Lycée Edouard Branly - Amiens</h3>
+        </div>
+        <p>2018 - 2021<br/>
+          <span data-i18n="edu_branly_desc"></span>
+          <br>
+          <span data-i18n="edu_branly_skills"></span>
+        </p>
+      </div>
+      <div class="card">
+        <div class="exp-header">
+          <img src="../assets/college.jpg" alt="Collège des fontaines Logo" class="exp-logo" />
+          <h3>Collège des fontaines - Poix-de-Picardie</h3>
+        </div>
+        <p>2014 - 2018</p>
+      </div>
     </div>
   </main>
 

@@ -8,11 +8,7 @@ function setLanguage(lang) {
     const key = el.getAttribute('data-i18n');
     const translation = translations[lang][key];
     if (translation) {
-      if (el.tagName === "P" || el.tagName === "DIV" || el.tagName === "H3" || el.tagName === "H4") {
         el.innerHTML = translation;
-      } else {
-        el.textContent = translation;
-      }
     }
   });
   document.documentElement.lang = lang;
