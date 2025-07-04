@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hugo Jasmin - Portfolio</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+
+  <header class="header-flex">
+    <img src="../assets/Hugo.jpg" alt="Photo de Hugo Jasmin" class="profile-photo" />
+    <div class="header-text">
+      <h1>Hugo Jasmin</h1>
+      <p data-i18n="subtitle"></p>
+    </div>
+  </header>
+
+    <div class="header-nav">
+      <h2 data-i18n="travel">Voyages</h2>
+      <nav><a href="../index.html" data-i18n="nav_back">← Retour au menu principal</a></nav>
+    </div>
+
+  <nav class="icon-nav">
+    <a href="about.html" data-i18n="about" title="À propos"><i class="fas fa-user"></i></a>
+    <a href="skills.html" data-i18n="skills" title="Compétences"><i class="fas fa-code"></i><span></span></a>
+    <a href="experience.html" data-i18n="experience" title="Expérience"><i class="fas fa-briefcase"></i><span></span></a>
+    <a href="projects.html" data-i18n="projects" title="Projets"><i class="fas fa-project-diagram"></i><span></span></a>
+    <a href="education.html" data-i18n="education" title="Formation"><i class="fas fa-graduation-cap"></i><span></span></a>
+    <a href="languages.html" data-i18n="languages" title="Langues"><i class="fas fa-language"></i><span></span></a>
+    <a href="activities.html" data-i18n="activities" title="Activités"><i class="fas fa-music"></i><span></span></a>
+
+	<select id="language-select" aria-label="Choisir la langue">
+	<option value="fr">FR</option>
+    	<option value="en">EN</option>
+    	<!-- <option value="de">DE</option> -->
+  	</select>
+  </nav>
+
+  <main>
+    <div id="map" style="height: 600px;"></div>
+  </main>
+
+  <footer>
+    <p data-i18n="footer">© 2025 Hugo Jasmin. Tous droits réservés.</p>
+  </footer>
+
+  <script src="../js/lang.js"></script>
+  <script src="../js/lang-switcher.js"></script>
+
+<script>
+  const map = L.map('map').setView([20, 0], 2);
+
+  // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  //   attribution: '© OpenStreetMap',
+  //   maxZoom: 5,
+  // }).addTo(map);
+
+  const visitedCountries = ['France', 'Spain', 'Italy', 'Germany', 'Poland', 'Belgium', 'United Kingdom', 'Switzerland', 'Austria'];
+  const nextCountries = ['Portugal'];
+
+  fetch('https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json')
+    .then(res => res.json())
+    .then(data => {
+      L.geoJSON(data, {
+        style: feature => {
+          const name = feature.properties.name;
+          return {
+            fillColor: visitedCountries.includes(name) ? 'green' : nextCountries.includes(name) ? 'yellow' : '#ccc',
+            weight: 1,
+            color: '#666',
+            fillOpacity: 0.6,
+          };
+        },
+        onEachFeature: (feature, layer) => {
+          layer.bindPopup(feature.properties.name);
+        }
+      }).addTo(map);
+    });
+
+  
+  const visitedCities = [
+    { name: 'Paris', country: 'France', lat: 48.8566, lng: 2.3522 },
+    { name: 'Rome', country: 'Italy', lat: 41.9028, lng: 12.4964 },
+    { name: 'Barcelona', country: 'Spain', lat: 41.3851, lng: 2.1734 },
+    { name: 'Konstanz', country: 'Germany', lat: 47.659216, lng: 9.1750718 },
+  ];
+
+  const nextCities = [
+    { name: 'Lisbon', country: 'Portugal', lat: 38.7169, lng: -9.1399 }
+  ];
+
+  visitedCities.forEach(city => {
+    L.marker([city.lat, city.lng], { title: city.name })
+      .addTo(map)
+      .bindPopup(`<strong>${city.name}</strong><br>${city.country}`)
+      .openPopup();
+  });
+
+  nextCities.forEach(city => {
+    L.marker([city.lat, city.lng], { title: city.name })
+      .addTo(map)
+      .bindPopup(`<strong>${city.name}</strong><br>${city.country}`);
+  });
+</script>
+
+
+</body>
+</html>
