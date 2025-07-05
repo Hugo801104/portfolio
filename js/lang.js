@@ -112,6 +112,15 @@ Participation aux Olympiades de Mathématiques et au Concours National de Mathé
   Cette expérience m’a permis de développer des compétences en management de la qualité, amélioration continue et conduite de projets à impact dans un cadre associatif exigeant.
 </p>
 `,
+    exp_saica_title: "Stage opérateur - Saica Pack",
+    exp_saica_date: "Juin 2024 | Poix-de-Picardie",
+    exp_saica_desc: "Assistance à la conduite de machines, optimisation de la produciton et soutien technique",
+    exp_aes_title: "Bénévole - Association d'Entraide Scolaire",
+    exp_aes_date: "Décembre 2023 | Juin 2024",
+    exp_aes_desc: "En tant que bénévole dans l'association, j'ai accompagné une élève de CP afin de l'aider à surmonter ses difficultés scolaires et améliorer sa confiance en elle à travers un accompagnement personnalisé.",
+    exp_wake_title: "Responsable de la restauration - World Atlantic Kelio Event",
+    exp_wake_date: "Juin 2024 - Novembre 2024 | Nantes",
+    exp_wake_desc: "Le WAKE est un évènement sportif et culturel organisé en collaboration avec le BDI d'IMT Atlantique et sponsorisé par Kélio. En tant qu e reponsable de la restauration, je m'occupe de l'organisation et du bon déroulement des repas tout au long de l'évènement.",
     lang_en: "Anglais",
     lang_en_level: "Courant",
     lang_de: "Allemand",
@@ -234,6 +243,15 @@ Participated in Mathematics Olympiads and the National Mathematics Competition
   This experience allowed me to develop skills in quality management, continuous improvement, and leading impactful projects in a demanding associative environment.
 </p>
 `,
+    exp_saica_title: "Worker internship - Saica Pack",
+    exp_saica_date: "June 2024 | Poix-de-Picardie",
+    exp_saica_desc: "Assistance with machine operation, production optimization and technical support",
+    exp_aes_title: "Volunteer - Association d'Entraide Scolaire",
+    exp_aes_date: "December 2023 | June 2024",
+    exp_aes_desc: "As a volunteer in the association, I worked with a first-year pupil to help her overcome her difficulties ar school and improve her self confidence through personalised support.",
+    exp_wake_title: "Catering manager - World Atlantic Kelio Event",
+    exp_wake_date: "June 2024 - November 2024 | Nantes",
+    exp_wake_desc: "The WAKE is a sporting and cultural event organized in collaboration with the International Office (BDI) of IMT Atlantique and sponsored by Kelio. As a catering manager, I am in charge of the organization and smooth running of meals throughout the event.",
     lang_en: "English",
     lang_en_level: "Fluent",
     lang_de: "German",
